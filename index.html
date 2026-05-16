@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cumpleaños Carlitos y Paulito</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="particles"></div>
+  <div id="introScreen" class="intro-screen">
+    <div class="intro-content">
+      <h1 class="intro-title">
+        Carlitos & Paulito
+      </h1>
+      <p>Toca para comenzar la invitación ✨</p>
+    </div>
+  </div>
+  <div class="slider">
+
+    <section class="slide hero-princesa">
+      <div class="hero-texto">
+        <h2 class="subtitulo">
+          ¡ESTÁS INVITADO!
+        </h2>
+
+        <h1 class="nombre-princesa">
+          Carlitos & Paulito
+        </h1>
+        <div class="cumple-linea">
+          <span class="linea"></span>
+
+          <div class="edades">
+            <p>Carlitos <strong>6 años</strong></p>
+            <p>Paulito <strong>4 años</strong></p>
+          </div>
+
+          <span class="linea"></span>
+        </div>
+        <div class="contador-regresivo">
+          <div class="tiempo">
+            <span id="dias">00</span>
+            <p>Días</p>
+          </div>
+          <div class="tiempo">
+            <span id="horas">00</span>
+            <p>Horas</p>
+          </div>
+          <div class="tiempo">
+            <span id="minutos">00</span>
+            <p>Min</p>
+          </div>
+          <div class="tiempo">
+            <span id="segundos">00</span>
+            <p>Seg</p>
+          </div>
+        </div>
+
+        <div class="fossil-wrapper">
+
+          <img src="assets/img/fosil.png" alt="" class="fossil-head">
+
+          <div class="fossil-circle"></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="slide ceremonia">
+      <h2>Ceremonia & Recepción</h2>
+      <div class="marco-espejo">
+
+        <img src="assets/img/espejo.png" class="espejo">
+
+        <div class="contenido-ceremonia">
+          <div class="bloque">
+            <h3>Misa</h3>
+            <p>3:00 PM</p>
+            <a class="btn" target="_blank" href="https://maps.app.goo.gl/ecHuYGGJbGVwjdNy5">
+              Ver iglesia
+            </a>
+          </div>
+
+          <div class="bloque">
+            <h3>Recepción</h3>
+            <p>4:00 PM</p>
+            <a class="btn" target="_blank" href="https://maps.app.goo.gl/E1j6KrmLGQ7c9ZoB6?g_st=iw">
+              Ver ubicación
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <img src="assets/img/4.png" class="decoracion izquierda">
+      <img src="assets/img/5.png" class="decoracion derecha">
+
+    </section>
+
+    <section class="slide confirmacion">
+
+      <div class="contenido-final">
+
+        <h2>Estás invitado</h2>
+        <p class="fecha-final">
+          Sábado 28 de Marzo 2026<br>
+        </p>
+        <p>
+          Será un día muy especial y nos encantará
+          compartirlo contigo ✨
+        </p>
+
+        <p>
+          Confirma tu asistencia y acompáñanos
+          a celebrar este momento mágico.
+        </p>
+
+        <a class="btn" target="_blank" id="waLink">
+          Confirmar asistencia
+        </a>
+
+        <!-- Créditos -->
+        <div class="creditos">
+          <p>
+            Diseñado con amor por
+            <a href="https://shiny-maker.com/" target="_blank" class="marca">
+              Shiny Maker ✨
+            </a>
+          </p>
+
+          <div class="redes">
+            <a href="https://www.instagram.com/shinymakerstudio/" target="_blank">
+              <img src="assets/img/ig.png" alt="Instagram">
+            </a>
+
+            <a href="https://www.facebook.com/profile.php?id=61587591115184" target="_blank">
+              <img src="assets/img/fb.png" alt="Facebook">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Princesa lateral -->
+      <img src="assets/img/3.png" class="princesa-lateral">
+
+    </section>
+  </div>
+
+  <div class="nav">
+    <button id="prev">←</button>
+    <span id="indicator">1 / 4</span>
+    <button id="next">→</button>
+  </div>
+
+  <audio id="bgMusic" loop preload="auto" playsinline>
+    <source src="assets/audio/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicBtn" class="music-btn">
+    <img id="musicIcon" src="assets/img/play.svg" alt="music">
+  </button>
+  <div class="lightbox" id="lightbox">
+    <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Anterior">‹</button>
+
+    <span class="cerrar" id="cerrar">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" alt="Foto">
+
+    <button class="lb-arrow lb-next" id="lbNext" aria-label="Siguiente">›</button>
+  </div>
+  <script src="assets/js/script.js?v=2"></script>
+</body>
+
+</html>
