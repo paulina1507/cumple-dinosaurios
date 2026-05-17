@@ -128,53 +128,6 @@ body {
 
 }
 
-@media(max-width:768px) {
-
-  .hero-princesa {
-
-    padding-top: 60px;
-    padding-bottom: 40px;
-
-  }
-
-  .hero-texto {
-    margin-top: 0;
-  }
-
-  .contador-regresivo {
-    gap: 10px;
-    margin-top: 18px;
-  }
-
-  .fossil-wrapper {
-
-    height: 90px;
-
-    margin-top: 8px;
-  }
-
-  .fossil-circle {
-
-    width: 82px;
-    height: 82px;
-
-    border-width: 3px;
-
-    box-shadow:
-      0 0 20px rgba(177, 255, 55, .18),
-      inset 0 0 14px rgba(255, 255, 255, .04);
-  }
-
-  .fossil-head {
-
-    width: 68px;
-
-    bottom: -6px;
-  }
-
-
-}
-
 @keyframes fadeUp {
   from {
     transform: translateY(40px);
@@ -301,13 +254,33 @@ p {
 
 button {
   border: none;
-  background: #ff4fa0;
-  color: white;
-  font-size: 22px;
-  width: 50px;
-  height: 50px;
+  background:
+    linear-gradient(180deg,
+      #d7ff70,
+      #7fff00);
+  color: #08110d;
+  font-size: 24px;
+  font-weight: bold;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   cursor: pointer;
+  box-shadow:
+    0 0 18px rgba(127, 255, 0, .35),
+    inset 0 0 10px rgba(255, 255, 255, .15);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+button:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 28px rgba(127, 255, 0, .55),
+    inset 0 0 12px rgba(255, 255, 255, .2);
+
 }
 
 button:active {
@@ -349,7 +322,7 @@ button:active {
   font-family: 'Playfair Display', serif;
   letter-spacing: 4px;
   font-size: 20px;
-  color: #c79b2a;
+  color: #ffffff;
   margin-bottom: 5px;
 }
 
@@ -485,19 +458,13 @@ button:active {
 }
 
 .fossil-circle::before {
-
   content: "";
-
   position: absolute;
   inset: 0;
-
   background:
     url("../img/rock-texture.png");
-
   background-size: cover;
-
-  opacity: .18;
-
+  opacity: .2;
   mix-blend-mode: overlay;
 
 }
@@ -509,8 +476,6 @@ button:active {
   width: 100%;
 
   height: 260px;
-
-  margin-top: 30px;
 
   display: flex;
   justify-content: center;
@@ -1020,192 +985,10 @@ button:active {
   z-index: 4;
 }
 
-@media (max-width: 768px) {
-  .hero-princesa {
-    padding-bottom: 20px;
-  }
-
-  .hero-texto {
-    margin-top: 20px;
-  }
-
-  .subtitulo {
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 2px;
-  }
-
-  .nombre-princesa {
-    font-size: 50px;
-    line-height: 1;
-    margin: 6px 0;
-  }
-
-  .cumple-linea {
-    gap: 8px;
-    margin-top: 4px;
-  }
-
-  .cumple-texto,
-  .anitos {
-    font-size: 18px;
-  }
-
-  .numero {
-    font-size: 36px;
-  }
-
-  .linea {
-    width: 25px;
-  }
-
-  .contador-regresivo {
-    gap: 14px;
-    margin-top: 18px;
-  }
-
-  .tiempo {
-    width: 65px;
-    height: 65px;
-    padding: 8px;
-    border-radius: 16px;
-  }
-
-  .tiempo span {
-    font-size: 1.2rem;
-  }
-
-  .tiempo p {
-    font-size: 0.65rem;
-    margin-top: 3px;
-  }
-
-  .slide {
-    justify-content: center;
-    padding: 80px 20px 140px;
-  }
-
-  .marco-espejo {
-    width: 140vw;
-    max-width: 600px;
-  }
-
-  .contenido-ceremonia {
-    width: 80%;
-  }
-
-  .contenido-ceremonia h2 {
-    font-size: 15px;
-  }
-
-  .contenido-ceremonia h3 {
-    font-size: 18px;
-  }
-
-  .contenido-ceremonia p {
-    font-size: 16px;
-  }
-
-  .contenido-ceremonia .btn {
-    padding: 9px 16px;
-    font-size: 14px;
-  }
-
-  .linea {
-    width: 40px;
-  }
-
-  h1 {
-    font-size: 42px;
-  }
-
-  .princesa {
-    height: 170px;
-  }
-
-  .princesas {
-    position: relative;
-    bottom: auto;
-    margin-top: -10px;
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
-    width: 100%;
-    text-align: center;
-  }
-
-  .galeria {
-    grid-template-columns: repeat(2, 1fr);
-    width: 85%;
-  }
-
-  .decoracion {
-    height: 170px;
-    bottom: 140px;
-  }
-
-  .princesa-final {
-    height: 120px;
-    bottom: 100px;
-  }
-
-  .izquierda {
-    left: -10%;
-  }
-
-  .derecha {
-    right: -10%;
-  }
-
-  .confirmacion {
-    padding: 30px 20px 100px;
-  }
-
-  .confirmacion h2 {
-    font-size: 16px;
-    letter-spacing: 2px;
-  }
-
-  .confirmacion p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .confirmacion .btn {
-    padding: 10px 18px;
-    font-size: 14px;
-    border-radius: 24px;
-  }
-
-  .libro {
-    height: 130px;
-    margin-top: 25px;
-  }
-
-  .princesa-lateral {
-    position: absolute;
-    right: 10px;
-    bottom: 200px;
-    height: 140px;
-    z-index: 1;
-    opacity: 0.95;
-  }
-
-  .creditos {
-    margin-top: 20px;
-    font-size: 11px;
-  }
-
-  .redes img {
-    width: 22px;
-    height: 22px;
-  }
-
-  .fecha-final {
-    font-size: 15px;
-  }
+#indicator {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 /* Flechas del lightbox */
@@ -1246,27 +1029,412 @@ button:active {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
+
+  /* ================= CEREMONIA ================= */
+
+  .ceremonia {
+
+    justify-content: center;
+    gap: 30px;
+
+  }
+
+  .ceremonia h2 {
+
+    position: absolute;
+
+    top: 70px;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    text-align: center;
+
+    z-index: 20;
+
+    color: #c79b2a;
+
+    font-size: 20px;
+
+    letter-spacing: 3px;
+
+  }
+
+  .marco-espejo {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 40px;
+
+  }
+
+  .ceremonia .contenido-ceremonia {
+
+    width: 88%;
+
+    max-width: 340px;
+
+    padding: 30px 22px;
+
+    border-radius: 28px;
+
+  }
+
+  .ceremonia .contenido-ceremonia::before {
+
+    opacity: .14;
+
+  }
+
+  .ceremonia .contenido-ceremonia h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+
+  }
+
+  .ceremonia .contenido-ceremonia p {
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+  }
+
+  .ceremonia .contenido-ceremonia .btn {
+
+    margin-top: 18px;
+
+    padding: 12px 22px;
+
+    font-size: 15px;
+
+  }
+
+  /* ================= HERO ================= */
+
+  .hero-princesa {
+
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+  }
+
+  .hero-texto {
+
+    margin-top: 0;
+
+    transform: translateY(60px);
+
+  }
+
+  .subtitulo {
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 2px;
+
+  }
+
+  .nombre-princesa {
+
+    font-size: 50px;
+
+    line-height: 1;
+
+    margin: 6px 0;
+
+  }
+
+  .cumple-linea {
+
+    gap: 8px;
+
+    margin-top: 4px;
+
+  }
+
+  .cumple-texto,
+  .anitos {
+
+    font-size: 18px;
+
+  }
+
+  .numero {
+
+    font-size: 36px;
+
+  }
+
+  .linea {
+
+    width: 40px;
+
+  }
+
+  h1 {
+
+    font-size: 42px;
+
+  }
+
+  /* ================= CONTADOR ================= */
+
+  .contador-regresivo {
+
+    gap: 8px;
+
+    margin-top: 18px;
+
+  }
+
+  .tiempo {
+
+    width: 65px;
+
+    height: 65px;
+
+    padding: 8px;
+
+    border-radius: 16px;
+
+  }
+
+  .tiempo span {
+
+    font-size: 1.2rem;
+
+  }
+
+  .tiempo p {
+
+    font-size: 0.65rem;
+
+    margin-top: 3px;
+
+  }
+
+  /* ================= SLIDES ================= */
+
+  .slide {
+
+    justify-content: center;
+
+    padding: 80px 20px 140px;
+
+  }
+
+  /* ================= FÓSIL ================= */
+
+  .fossil-wrapper {
+
+    height: 170px;
+
+  }
+
+  .fossil-circle {
+
+    width: 150px !important;
+
+    height: 150px !important;
+
+    border-width: 4px;
+
+    box-shadow:
+      0 0 20px rgba(177, 255, 55, .15),
+      inset 0 0 12px rgba(255, 255, 255, .04);
+
+  }
+
+  .fossil-head {
+
+    width: 130px;
+    bottom: 5px;
+
+  }
+
+  /* ================= DINOSAURIOS ================= */
+
+  .princesa {
+
+    height: 170px;
+
+  }
+
+  .princesas {
+
+    position: relative;
+
+    bottom: auto;
+
+    margin-top: -10px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-end;
+
+    width: 100%;
+
+    text-align: center;
+
+  }
+
+  .decoracion {
+
+    height: 260px;
+
+    bottom: 90px;
+
+  }
+
+  .izquierda {
+
+    left: -10%;
+
+  }
+
+  .derecha {
+
+    right: -10%;
+
+  }
+
+  /* ================= GALERÍA ================= */
+
+  .galeria {
+
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 85%;
+
+  }
+
+  /* ================= CONFIRMACIÓN ================= */
+
+  .confirmacion {
+
+    padding: 30px 20px 100px;
+
+  }
+
+  .confirmacion h2 {
+
+    font-size: 16px;
+
+    letter-spacing: 2px;
+
+  }
+
+  .confirmacion p {
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+  }
+
+  .confirmacion .btn {
+
+    padding: 10px 18px;
+
+    font-size: 14px;
+
+    border-radius: 24px;
+
+  }
+
+  .fecha-final {
+
+    font-size: 15px;
+
+  }
+
+  .libro {
+
+    height: 130px;
+
+    margin-top: 25px;
+
+  }
+
+  .princesa-lateral {
+
+    position: absolute;
+
+    right: -10px;
+
+    bottom: 50px;
+
+    height: 240px;
+
+    z-index: 1;
+
+    opacity: 0.95;
+
+  }
+
+  /* ================= FOOTER ================= */
+
+  .creditos {
+
+    margin-top: 20px;
+
+    font-size: 11px;
+
+  }
+
+  .redes img {
+
+    width: 22px;
+
+    height: 22px;
+
+  }
+
+  /* ================= LIGHTBOX ================= */
+
   .lb-arrow {
+
     width: 46px;
+
     height: 46px;
+
     font-size: 34px;
+
     line-height: 46px;
+
   }
 
   .lb-prev {
+
     left: 10px;
+
   }
 
   .lb-next {
+
     right: 10px;
+
   }
+
 }
 
 .contador-regresivo {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   position: relative;
   z-index: 3;
 }
@@ -1314,7 +1482,6 @@ button:active {
   font-size: 0.75rem;
   margin-top: 4px;
   letter-spacing: 1px;
-  color: #7a3d5c;
 }
 
 .fecha-final {
@@ -1331,4 +1498,135 @@ button:active {
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.ceremonia .contenido-ceremonia {
+
+  position: relative;
+
+  padding: 42px 30px;
+
+  border-radius: 38px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(rgba(14, 22, 14, .92),
+      rgba(8, 12, 9, .95));
+
+  border:
+    1px solid rgba(199, 155, 42, .22);
+
+  box-shadow:
+    0 0 40px rgba(0, 0, 0, .45),
+    inset 0 0 30px rgba(255, 255, 255, .03);
+
+  backdrop-filter: blur(6px);
+
+}
+
+/* TEXTURA ROCA */
+
+.ceremonia .contenido-ceremonia::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border-radius: inherit;
+
+  background:
+    url("../img/rock-texture.png");
+
+  background-size: cover;
+
+  background-position: center;
+
+  opacity: .16;
+
+  mix-blend-mode: overlay;
+
+  pointer-events: none;
+
+}
+
+/* CONTENIDO ARRIBA DE LA TEXTURA */
+
+.ceremonia .contenido-ceremonia>* {
+
+  position: relative;
+
+  z-index: 2;
+
+}
+
+@media (min-width: 769px) {
+
+  .ceremonia h2 {
+
+    position: absolute;
+
+    top: 40px;
+
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    text-align: center;
+
+    z-index: 20;
+
+    font-size: 30px;
+
+    letter-spacing: 5px;
+
+  }
+
+  .slide {
+
+    max-width: 100%;
+
+    width: 100%;
+
+    border-radius: 0;
+
+  }
+
+  .ceremonia {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .marco-espejo {
+
+    width: 500px;
+
+  }
+
+  .decoracion {
+
+    height: 420px;
+
+    bottom: 40px;
+
+  }
+
+  .izquierda {
+
+    left: 8%;
+
+  }
+
+  .derecha {
+
+    right: 8%;
+
+  }
+
 }
